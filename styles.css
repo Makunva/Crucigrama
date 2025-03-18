@@ -1,16 +1,27 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f0f8ff;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .container {
     width: 80%;
-    margin: auto;
+    max-width: 800px;
     padding: 20px;
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
 }
 
 #crucigrama {
@@ -23,46 +34,51 @@ body {
 .casilla {
     width: 50px;
     height: 50px;
-    border: 1px solid #000;
+    border: 2px solid #007BFF;
     text-align: center;
     line-height: 50px;
-    font-size: 20px;
+    font-size: 24px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .casilla:hover {
-    background-color: #e0e0e0;
+    background-color: #e6f7ff;
 }
 
 .casilla.selected {
-    background-color: #d0d0d0;
+    background-color: #b3d9ff;
+    transform: scale(1.1);
 }
 
 #pistas {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
 .pista {
     margin: 5px;
-    padding: 5px;
-    border: 1px solid #000;
-    background-color: #e0e0e0;
-    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #007BFF;
+    background-color: #e6f7ff;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #333;
 }
 
 .button {
-    display: block;
-    width: 100%;
-    padding: 10px;
+    display: inline-block;
+    width: 150px;
+    padding: 15px;
     background-color: #007BFF;
     color: #fff;
     text-align: center;
     text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
-    font-size: 16px;
+    border-radius: 10px;
+    margin: 5px;
+    font-size: 18px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
